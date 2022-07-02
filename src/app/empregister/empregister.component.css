@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
+.form-outer
+{   
+    margin: 23px;
+   color: whitesmoke;
+    padding: 23px;
+    border-radius: 3px;
+}
+form
+{
+    text-align: center;
+    font-family: 'Mingzat', sans-serif;
+}
+
+form button{
+    margin:12px;
+}
+
+input[type=submit]
+{
+    margin: 12px;
+}
+
+input[type=text], input[type=password],input[type=email] {
+    width: 50%;
+    padding: 15px;
+    font-family: 'Mingzat', sans-serif;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+#form-error
+{
+    text-transform: uppercase;
+    color: red;
+}

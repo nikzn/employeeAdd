@@ -1,0 +1,9 @@
+.modal-body
+{
+    color: #333;
+}
+#form-error
+{
+    text-transform: uppercase;
+    color: red;
+}

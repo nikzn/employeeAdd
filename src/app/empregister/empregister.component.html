@@ -1,0 +1,32 @@
+<nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand text-primary">EMPLOYEE HUB</a>
+         <button class="btn btn-outline-success" routerLink="view" type="submit">View All Employee</button>      
+    </div>
+  </nav>
+
+
+  <div class="form-outer bg-dark">
+    <h3>EMPLOYEE DETAILS</h3>
+    <form [formGroup]="registerForm" (ngSubmit)="empsubmit()" >
+        <label for="fname">First Name</label><br>
+        <input type="text" placeholder="Eg:John" formControlName="fname" ><br>
+        <div id="form-error" *ngIf="(this.registerForm.get('fname')?.touched||this.registerForm.get('fname')?.dirty)&&this.registerForm.get('fname')?.errors" >invalid fname</div>
+        <label for="lname">Last Name</label><br>
+        <input type="text" placeholder="Eg:Smith" formControlName="lname" ><br>
+        <div id="form-error" *ngIf="(this.registerForm.get('lname')?.touched||this.registerForm.get('lname')?.dirty)&&this.registerForm.get('lname')?.errors" >invalid lname</div>
+        <label for="contact">Mobile Number</label><br>
+        <input type="text" placeholder="1234567890" formControlName="contact" ><br>
+        <div id="form-error" *ngIf="(this.registerForm.get('contact')?.touched||this.registerForm.get('contact')?.dirty)&&this.registerForm.get('contact')?.errors" >invalid contact</div>
+        <label for="email">Email</label><br>
+        <input type="email" placeholder="abc123@abc.com" formControlName="email" ><br>
+        <div id="form-error" *ngIf="(this.registerForm.get('email')?.touched||this.registerForm.get('email')?.dirty)&&this.registerForm.get('email')?.errors" >invalid email</div>
+        <label for="password">Password</label><br>
+        <input type="password" placeholder="Password" formControlName="password" ><br>
+        <div id="form-error" *ngIf="(this.registerForm.get('password')?.touched||this.registerForm.get('password')?.dirty)&&this.registerForm.get('password')?.errors" >invalid password</div>
+        <button class="btn btn-outline-primary" (click)="reset()">Cancel</button>
+        <input type="submit" value="submit" class="btn btn-outline-success  float-right "> 
+    </form>
+  </div>
+
+

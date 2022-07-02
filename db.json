@@ -1,0 +1,16 @@
+{
+  "posts": [
+    {
+      "fname": "Nikhil",
+      "lname": "PC",
+      "contact": "9995830915",
+      "email": "nikznn46@gmail.com",
+      "password": "abc123",
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
